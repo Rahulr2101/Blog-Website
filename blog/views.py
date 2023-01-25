@@ -7,7 +7,10 @@ from django.shortcuts import redirect
 
 # Create your views here.
 
-
+def test(request):
+    posts = Post.objects.order_by('published_date')
+    print(posts)
+    return render(request, 'blog/test.html', {'posts': posts})
 
 def post_list(request):
     posts = Post.objects.order_by('published_date')
@@ -44,3 +47,4 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+

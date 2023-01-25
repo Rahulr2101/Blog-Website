@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/homecss.css'%}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+   
+    <nav class ="navbar">
+        <h1 style="font-family: 'Lobster',serif;",>Blog</h1>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="blogs">Blogs</a></li>
+            <li><a href="{% url 'post_new' %}" class = "container">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'post_new' %}" class="top-menu">
+                        {% include './icons/file-earmark-plus.svg' %}
+                    </a>
+                {% endif %}</a>
+        </ul>
+        </nav>
+        <div class = "main">
+            
+        </div>
+        <div class ="img">
+            <div class ="mytxt">My blog</div>
+        </div>
+        <div class="content">
+             <p>{% for post in posts %}
+                <h2><a href="">{{ post.title }}</a></h2> <br>
+                <time class="date">
+                    {{ post.published_date }}
+                </time>
+                <br>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <br>
+                {% endfor %}
+            </p>
+              
+
+    <div class = "jd">
+        <div class = "sub">
+            <p class="subt"style="font-family: 'Lobster',serif;">Subscribe</p>
+            <fieldset>
+                <input type ="text" value ="" placeholder="Name"><br>
+                <input type = "text" value = "" placeholder="Email"><br>
+                <button type = "submit" value="submit">Submit</button>
+            </fieldset>
+            <div class ="con">
+                <div clas ="icons">
+                <div class = "facebook"></div>
+                <div class ="github"></div>
+                <div class ="instagram"></div>
+                <div class ="twitter"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    </body>
+    </html>
+    

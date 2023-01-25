@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img {
+    background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.91)),
+        url(1.jpg);
+        min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 10%
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+
+}
+
+li a:hover {
+    background-color: rgb(255, 230, 230);
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+    background: #fff;
+    z-index: 9;
+}
+
+.mytxt {
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+    bottom: 40%;
+    left: 40%;
+}
+
+.content {
+    position: absolute;
+    width: 1282px;
+    top: 520px;
+    left: 200px;
+    margin-right: 200px;
+
+}
+
+.h {
+    background-color: antiquewhite;
+}
+
+.photo1 {
+    position: absolute;
+    margin: 10px;
+    right: 54%;
+    width: 254px;
+    height: auto;
+}
+
+.top-menu {
+    color: #000000;
+    float: right;
+    font-size: 26pt;
+    margin-right: -51px;
+    margin-top: -15px;
+}
+
+.date {
+    position: absolute;
+    color: #828282;
+    left: 100px;
+    top: 35px;
+}
+
+.jd {
+    position: relative;
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.91), rgba(46, 45, 46, 0.52)),
+        url(3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    height: 700px;
+    width: 200vh;
+    top: 17px;
+    left: -16%;
+}
+
+.sub {
+    position: absolute;
+    margin-right: 200px;
+    background: rgba(88, 88, 88, 0.3);
+    border-radius: 10%;
+    height: 339px;
+    width: 713px;
+    top: 9%;
+    left: 32%;
+}
+
+fieldset {
+    position: absolute;
+    top: 39%;
+    left: 10%;
+    width: 550px;
+    height: 100px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding: 8px 15px;
+}
+
+button {
+    position: absolute;
+    margin: 0 auto;
+    padding: 8px 18px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    left: 230px;
+    background-color: rgb(137, 185, 169);
+}
+
+.subt {
+    position: absolute;
+    top: 27px;
+    left: 176px;
+    font-size: 79px;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.icons {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.facebook {
+    position: absolute;
+
+    height: 30px;
+    width: 30px;
+    background-image: url('facebook.png');
+    background-repeat: no-repeat;
+    top: 455px;
+    left: 314px;
+
+
+}
+
+.github {
+    position: absolute;
+ 
+    height: 30px;
+    width: 30px;
+    background-image: url('github.png');
+    background-repeat: no-repeat;
+    top: 455px;
+    left: 477px;
+}
+
+.instagram {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url('instagram.png');
+    background-repeat: no-repeat;
+    top: 455px;
+    left: 392px;
+}
+
+.twitter {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url('twitter.png');
+    background-repeat: no-repeat;
+    top: 455px;
+    left: 234px;
+}
