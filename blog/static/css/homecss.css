@@ -149,6 +149,7 @@ fieldset {
 }
 
 input {
+    border-radius: 8px;
     display: block;
     width: 100%;
     margin: 0 0 15px 0;
@@ -156,6 +157,7 @@ input {
 }
 
 button {
+    border-radius: 8px;
     position: absolute;
     margin: 0 auto;
     padding: 8px 18px 10px;
